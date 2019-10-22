@@ -1,0 +1,15 @@
+
+
+  <view class='out' style='z-index:4;transform: rotate3d({{rotate}});'>
+    <view class='in' animation="{{animationData}}"  style='  height: {{r}}rpx; width: {{r}}rpx;'>
+    <image class='planet' style='height: {{r}}rpx; width: {{r}}rpx;' src='/images/download.png'></image>
+    <!-- <view class='planet' style='right:{{r}}rpx'>
+      
+      </view> -->
+
+    
+    </view>
+    
+  </view>
+ 
+

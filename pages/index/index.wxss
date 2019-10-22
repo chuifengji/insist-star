@@ -1,0 +1,358 @@
+/**index.wxss**/
+page{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.content{
+  position: fixed;
+  width: 20%;
+  height: 5%;
+  font-size: 32rpx;
+  color: white;
+  left: 30rpx;
+  z-index: 2;
+
+}
+.nav{
+  width: 750rpx;
+  position: fixed;
+  z-index: 1;
+
+}
+
+
+.container{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image:linear-gradient(#35407e,#525183 ); /* background-image: url  (https://mini-1258759069.cos.ap-chengdu.myqcloud.com/backgroundindex.png);*/
+  background-size: cover;
+
+}
+.star1 {
+    width: 0.8px;
+    height:0.8px;
+    top: 200rpx;
+    background: #f7f7b6;
+    position: fixed;
+    left: 300rpx;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+    animation: flash 2.9s  infinite;
+       box-shadow: 0px 0px 12px 1.2px rgba(255, 255, 255, 0.719);
+  
+}
+.star2 {
+    width: 0.8px;
+    height:0.8px;
+    top: 600rpx;
+    background: #f7f7b6;
+    position: fixed;
+    left: 550rpx;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+    animation: flash 3s  infinite;
+       box-shadow: 0px 0px 12px 1.2px rgba(255, 255, 255, 0.719);
+  
+}
+.star3 {
+    width: 0.8px;
+    height:0.8px;
+    top: 800rpx;
+    background: #f7f7b6;
+    position: fixed;
+    left: 100rpx;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+    animation: flash 2.8s  infinite;
+       box-shadow: 0px 0px 12px 1.2px rgba(255, 255, 255, 0.719);
+  
+}
+.star4 {
+    width: 1.1px;
+    height:1.1px;
+    top: 400rpx;
+    background: #f7f7b6;
+    position: fixed;
+    left: 600rpx;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+    animation: flash 2.6s  infinite;
+       box-shadow: 0px 0px 14px 1.4px rgba(255, 255, 255, 0.719);
+  
+}
+.star5{
+    width: 1.2px;
+    height:1.2px;
+    top: 600rpx;
+    background: #f7f7b6;
+    position: fixed;
+    left: 450rpx;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+    animation: flash 2.7s  infinite;
+    box-shadow: 0px 0px 14px 1.4px rgba(255, 255, 255, 0.719);
+  
+}
+.star6 {
+    width: 0.8px;
+    height:0.8px;
+    top: 300rpx;
+    background: #f7f7b6;
+    position: fixed;
+    left: 100rpx;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+    animation: flash 3.5s  infinite;
+       box-shadow: 0px 0px 12px 1.2px rgba(255, 255, 255, 0.719);
+  
+}
+.star7 {
+    width: 1.3px;
+    height:1.3px;
+    top: 900rpx;
+    background: #f7f7b6;
+    position: fixed;
+    left: 300rpx;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+    animation: flash 3.1s  infinite;
+       box-shadow: 0px 0px 15px 1.5px rgba(255, 255, 255, 0.719);
+  
+}
+.star8 {
+    width: 0.8px;
+    height:0.8px;
+    top: 800rpx;
+    background: #f7f7b6;
+    position: fixed;
+    left: 650rpx;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+    animation: flash 2s  infinite;
+       box-shadow: 0px 0px 12px 1.2px rgba(255, 255, 255, 0.719);
+  
+}
+.star9{
+    width: 1.3px;
+    height:1.3px;
+    top: 300rpx;
+    background: #f7f7b6;
+    position: fixed;
+    left: 650rpx;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+    animation: flash 2s  infinite;
+       box-shadow: 0px 0px 15px 1.5px rgba(255, 255, 255, 0.719);
+  
+}
+
+
+
+
+.moon{
+  width: 100%;
+  height: 380rpx;
+  /* background-color: yellow; */
+  /* border-radius: 50%; */
+  position: fixed;
+  bottom: 0
+}
+
+.userinfo-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  position: fixed;
+  left: 295rpx;
+  top: 320rpx;
+}
+.yourmoon
+{
+  height: 70rpx;
+  width: 420rpx;
+position: absolute;
+top: 518rpx;
+left: 165rpx;
+
+
+}
+.kuang{
+   height: 220rpx;
+  width: 220rpx;
+position: fixed;
+top: 290rpx;
+left: 265rpx;
+background-image: url('https://mini-1258759069.cos.ap-chengdu.myqcloud.com/kuang.png');
+background-size: cover;
+}
+.btn{
+  height: 100rpx;
+  width: 60%;
+  position: fixed;
+  left: 150rpx;
+  bottom: 94rpx
+}
+.day{
+  display: block;
+  position: absolute;
+  top: 630rpx;
+  left: 280rpx;
+  font-size: 31rpx;
+  color: white
+  
+}
+.xingqiu1
+{
+  position: absolute;
+  width: 250rpx;
+  height: 200rpx;
+  right: 0rpx;
+  top: 0rpx;
+
+}
+.xingqiu2
+{
+  position: absolute;
+  width: 150rpx;
+  height: 300rpx;
+  left: 0rpx;
+  top: 40%;
+  
+}
+
+
+
+
+
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.wx-popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  
+
+}
+.popup-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 300rpx;
+ 
+  width: 80%;
+  max-width: 600rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+  box-sizing: bordre-box;
+  transform: translate(-50%, -50%); 
+  overflow: hidden;
+
+  background:whitesmoke;
+
+}
+.wx-popup-title {
+  width: 100%;
+  padding: 10rpx;
+  text-align: center;
+  font-size: 40rpx;
+  border-bottom: 4rpx solid rgb(103, 170, 233);
+  color: rgb(6, 182, 6);
+}
+.wx-popup-con {
+  margin: 40rpx 10rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: rgb(167, 165, 165);
+}
+.wx-popup-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40rpx;
+  color: rgb(6, 182, 6);
+}
+
+.btn_no{
+  width: 140rpx;
+  height: 80rpx;
+position: absolute;
+left: 80rpx;
+  font-size: 34rpx;
+  text-align: center;
+  border: 1rpx solid #b1b1b3;
+  color: rgb(185, 247, 185);
+  line-height: 80rpx;
+  
+}
+.btn_ok{
+  width: 140rpx;
+  height: 80rpx;
+position: absolute;
+right: 80rpx;
+  font-size: 34rpx;
+  text-align: center;
+  border: 1rpx solid #bcbdbe;
+  color: rgb(6, 182, 6);
+  line-height: 80rpx;
+}
+.hover{
+  background-color: #ccc;
+}

@@ -1,0 +1,44 @@
+
+
+
+
+
+.in {
+  /* background:orangered; */
+  /* opacity: 0.5; */
+
+  position: absolute;
+  /* transform: rotateZ(-120deg) */
+ 
+}
+
+.planety {
+  background: blue;
+  height: 50rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 115px;
+  
+}
+.out{
+background: ;
+  height: 600rpx;
+  width: 600rpx;
+  margin: -60rpx 120rpx;
+  /* transform: rotate3d(1,1,1,40deg); */
+  position: absolute;
+  
+  z-index: 2;
+ /* opacity: 0.5; */
+}
+.planet {
+  
+
+ 
+  position: absolute;
+  /* top:120px; */
+  /* transform: rotateY(90deg); */
+  
+}

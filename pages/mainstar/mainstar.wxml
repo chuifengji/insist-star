@@ -1,0 +1,39 @@
+<view class='nav' style='height:{{height}}px;top:{{navtop}}px;line-height:{{height}}px'>
+<view class='content' style='height:{{height}}px;top:{{navtop}}px;line-height:{{height}}px'>Your Moon</view>
+<view class='backbt' >
+<image bindtap='back'  src='/images/back2.png'></image>
+</view>
+</view>
+<view class='star1'></view>
+<view class='star2'></view>
+<view class='star3'></view>
+<view class='star4'></view>
+<view class='star5'></view>
+<view class='star6'></view>
+<view class='star7'></view>
+<view class='star8'></view>
+<view class='star9'></view>
+ <view class="planet">
+    <view class="planet-detail"></view>
+   <view class="planet-detail"></view>
+    <view class="planet-detail"></view>
+    <view class="planet-detail"></view>
+   <view class="planet-detail"></view>
+    <view class="planet-detail"></view> 
+  </view>
+ <view class='tuoyaun3' bindtap='aaa'></view>
+  <view class='tuoyaun4'></view>
+
+
+    <planet wx:for="{{stars}}" rotate="1,1,1,{{item.rot}}deg" r="{{item.r}}" speed="{{item.speed}}"></planet>
+  <view class='view_outside' bindtap='f4'>
+
+
+<item wx:for="{{stars}}" wx:key="id" name="{{item.name}}" begintimeY="{{item.begintimeY}}" begintimeM="{{item.begintimeM}}"begintimeR="{{item.begintimeR}}" indexy="{{item.eyear}}" indexm="{{item.emonth}}" indexdmaster="{{item.indexdmaster}}" times="{{item.times}}" binditemremove="onItemRemove" binddaka='punchcard'data-index="{{ index }}" days="{{item.days}}" status="{{status}}"></item>
+</view>
+<view class='tohistory' style='bottom:{{bottomoff3+12.5}}rpx' bindtap='f3'></view>
+
+
+
+
+

@@ -1,0 +1,25 @@
+
+<view class='nav' style='height:{{height}}px;top:{{navtop}}px;line-height:{{height}}px'>
+<view class='content' style='height:{{height}}px;top:{{navtop}}px;line-height:{{height}}px'>历史</view>
+<view class='backbt' >
+<image  bindtap='back' src='/images/back2.png'></image>
+</view>
+</view>
+<!--pages/index/index.wxml-->
+
+<view class='contanier'>
+      
+<view class='bg'>
+</view>
+<view class='tuoyuan3'></view>
+<view class='tuoyuan4'></view>
+
+<view class='bg1'>
+<view class='historytext'></view>
+<history wx:for="{{historys}}" wx:key="id" name="{{item.data.name}}" btime="{{item.data.begintimeY}}-{{item.data.begintimeM}}-{{item.data.begintimeR}}" etime="{{item.data.eyear}}-{{item.data.emonth}}-{{item.data.indexdmaster}}" statu="{{item.statu}}" >
+</history>
+</view>
+
+</view>
+
+

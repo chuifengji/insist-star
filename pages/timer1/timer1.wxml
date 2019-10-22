@@ -1,0 +1,65 @@
+
+<!--
+<calendar calendar-style="calendar" header-style="header" board-style="board" days-color="{{dayStyle}}" 
+lunar="{{lunar}}" />
+
+-->
+<view class='nav' style='height:{{height}}px;top:{{navtop}}px;line-height:{{height}}px' bindtap='back'>
+<view class='content' >打卡</view>
+<view class='backbt' >
+<image bindtap='back'  src='/images/back2.png'></image>
+</view>
+</view>
+
+<progress class='jindu' percent="{{jindu}}" show-info="true"  stroke-width="22" activeColor="#ffe874"  border-radius="10" />
+
+
+<view class='text'>任务总进度</view>
+
+
+
+
+
+
+<view class='hour'  style='animation-play-state:{{animatestrate1}}' bindtap='animateb1'> 
+<view class='hourh'>{{hours}}</view>
+<view class='texth'>hour</view>
+</view>
+
+<view class='min'  style='animation-play-state:{{animatestrate2}}'bindtap='animateb2'>
+<view>{{minute}}</view>
+<view class='textm'>min</view>
+</view>
+<view class='second'  style='animation-play-state:{{animatestrate3}}'bindtap='animateb3'>
+<view>{{second}}</view>
+<view class='texts'>sec</view>
+</view>
+<button hover-class='plain-hover' class='start' bindtap='start'>开始计时</button> 
+<button hover-class='plain-hover' class='stop' bindtap='stop'>停止</button>
+  <button hover-class='plain-hover' class='reset'bindtap='reset'>重置</button>
+<button hover-class='plain-hover' class='daka' bindtap='punchcard'>打卡</button>
+<view class='warn'>允许打卡时间：每天{{bt1}}：{{bt2}}~{{et1}}：{{et2}}</view>
+
+<view class='star1'></view>
+<view class='star2'></view>
+<view class='star3'></view>
+<view class='star4'></view>
+<view class='star5'></view>
+<view class='star6'></view>
+<view class='star7'></view>
+<view class='star8'></view>
+<view class='star9'></view>
+ <view class='mainstar'></view>
+ <view class='tuoyaun3' bindtap='aaa'></view>
+  <view class='tuoyaun4'></view>
+
+
+   <!-- <h1>{{hours}}:{{minute}}:{{second}}</h1>
+    <button id="stop" bindtap='stop'>stop</button>
+    <button id="start" bindtap='start'>start</button>
+    <button id="reset" bindtap='reset'>reset</button>
+-->
+<view class='more'>{{more}}</view><!-- 事件用户填写的备注中内容-->
+
+
+

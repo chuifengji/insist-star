@@ -1,0 +1,26 @@
+
+/* @import "assets/plugins/weui.wxss"; */
+ 
+/* page {
+    background-color: #FFF;
+    height: 100%;  
+    position: relative;
+}
+ 
+.page {
+    height: 100%;
+    flex: 1;
+    background-color: #FFF;
+    font-size: 32rpx;
+    font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+ 
+.layout-header {
+    background-color: #333;
+    display: flex;
+    box-sizing: border-box;
+} */
+
+
+

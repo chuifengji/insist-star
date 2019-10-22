@@ -1,0 +1,55 @@
+.lot{
+  width: 480rpx;
+  height: 90rpx;
+  border-radius: 15rpx;
+  position: relative;
+  margin-top: 20rpx;
+  left: 30rpx;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 2px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 2px -4px rgba(0, 0, 0, 0.2);
+  background: rgb(241, 241, 241);
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 90rpx;
+}
+.delete{
+width: 20px;
+height: 20px;
+top: -30px;
+position: absolute;
+right: -10px;
+cursor:pointer;
+color: red;
+font-size: 18px;
+}
+
+
+.x {
+        position: absolute;
+        right: 50rpx;
+        width: 20px;
+        height: 20px;
+        top: 35rpx;
+        display: inline-block;
+        cursor: pointer;
+       
+    }
+
+    .x::before {
+        content: '';
+        width: inherit;
+        border-top: 3px solid rgb(119, 118, 118);
+        position: absolute;
+        left: 80%;
+        top: 30%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .x::after {
+        content: '';
+        width: inherit;
+        border-top: 3px solid rgb(110, 110, 110);
+        position: absolute;
+        left: 80%;
+        top: 30%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "item":"/components/item/item",
+    "planet": "/components/planet/planet"
+  }
+}

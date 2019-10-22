@@ -1,0 +1,186 @@
+
+
+
+
+
+
+	<scroll-view scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}">
+			<view class='nav' style='height:{{height}}px;top:{{navtop}}px;line-height:{{height}}px'>
+<view class='content' style='height:{{height}}px;top:{{navtop}}px;line-height:{{height}}px'>彗星仓库</view>
+<view class='backbt'   hover-class='plain-hoverback'>
+<image bindtap='back'  src='/images/back2.png'></image>
+</view>
+</view>			
+		
+			
+		
+
+			<view  class='wareback'>
+
+      <view class='xinqiuanimate'  style='animation-play-state:{{animatestrate}}'>
+	<view class="crater"></view> 
+	<view class="crater2"></view> 
+	<view class="crater3"></view> 
+	<view class="crater4"></view> 
+	<view class="crater5"></view> 
+	<view class="crater6"></view> 
+	<view class="crater7"></view> 
+	</view>  
+
+
+
+
+
+
+<view class='shifang'></view>
+ <view class='tuoyaun3' bindtap='aaa'></view>
+  <view class='tuoyaun4'></view>
+
+
+<view class='shurukuang'>
+
+<view class="text1">任务详情</view>
+<input class='kind' bindinput='inputname' maxlength='8' value='{{name}}'></input>
+<view class="text2">结束日期</view>  
+  
+<view class='piyear'><picker class='pic' bindchange="bindyearChange" value="{{indexy}}" range="{{arrayy}}">{{arrayy[indexy]}}年
+  </picker> </view>
+<view class='pimonth'>  <picker class='pic' bindchange="bindmonthChange" value="{{indexm}}" range="{{arraym}}">
+
+      {{arraym[indexm]}}月
+  </picker></view>
+<view class='piday' wx:if="{{indexm==0||indexm==2||indexm==4||indexm==6||indexm==7||indexm==9||indexm==11}}">   <picker class='pic'  bindchange="bindday2Change" value="{{indexd2}}" range="{{arrayd2}}">
+    
+      {{arrayd2[indexd2]}}日
+     
+   
+  </picker></view>
+  
+<view class='piday' wx:if="{{indexm==3||indexm==5||indexm==8||indexm==10}}">     <picker class='pic'  bindchange="bindday1Change" value="{{indexd1}}" range="{{arrayd1}}">
+    
+      {{arrayd1[indexd1]}}日
+      
+   
+  </picker></view>
+  <view class='piday' wx:if="{{indexm==1&&(arrayy[indexy]%400==0||(arrayy[indexy]%4==0&&arrayy[indexy]%100!=0))}}">     <picker class='pic'  bindchange="bindday4Change" value="{{indexd4}}" range="{{arrayd4}}">
+    
+      {{arrayd4[indexd4]}}日
+    
+   
+  </picker></view>
+    <view class='piday' wx:elif="{{indexm==1}}">     <picker class='pic'  bindchange="bindday3Change" value="{{indexd3}}" range="{{arrayd3}}">
+    
+      {{arrayd3[indexd3]}}日
+    
+   
+  </picker></view>
+ 
+  <view class='text4'>打卡时间</view>
+
+<view class="btime">
+  <picker
+    mode="time"
+    value="{{btime}}"
+    start="00:00"
+    end="24:00"
+    bindchange="bindbTimeChange"
+  >
+    <view class="picker">{{btime}}
+    </view>
+  </picker>
+</view>
+
+<view class="etime">
+  <picker
+    mode="time"
+    value="{{btime}}"
+    start="00:00"
+    end="24:00"
+    bindchange="bindeTimeChange"
+  >
+    <view class="picker">
+      {{etime}}
+    </view>
+  </picker>
+</view>
+  
+  <view class="text3">备注</view>
+
+<input class='more' bindinput='inputmore' maxlength='12' value='{{more}}'></input>
+
+
+
+<view class='tuoyuana'></view>
+<view class='tuoyaunb'></view>
+</view>
+
+<button class='shifangb'  form-type='submit' bindtap='insert'  hover-class="plain-hover">确 认 释 放</button>
+<!--<button class='opendrawer' bindtap="showModal" hover-class="plain-hover"  data-target="viewModal">任 务 不 明</button>--->
+<view  class='qh' bindtap="showModal" hover-class="hover"  data-target="viewModal" >
+<image src='/images/qh.png'></image>
+
+</view>
+</view>
+
+
+		</scroll-view>
+		<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="hideModal">
+			<text class="cuIcon-pullright"></text>
+		</view>
+		<scroll-view scroll-y class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
+    <view class='text'>
+    <text>当你感到难以抉择的时候，重要的事就不再是选择哪一种。去做，才是最重要的。</text>
+    </view>
+    <view class='addinput'>
+    <input class='addinput' maxlength='8' placeholder='写下你想要坚持的...' bindinput='inputlot' value='{{lot}}'></input>
+    <view class='add' bindtap='addlot' hover-class='hover'></view>
+    </view>
+    <view class='result'>{{result}}</view>
+    <view class='outside'>
+    <view wx:for="{{lots}}" wx:key="id"  data-index='{{index}}'  class='lot'>
+    <view>{{item.content}}</view>
+    <view bindtap='delete'hover-class='hoverd' data-index='{{index}}'  class='x'></view>
+    </view>
+    
+		</view>
+
+    <button class='btlot' hover-class='bthover' bindtap='lot'>click</button>
+
+		</scroll-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

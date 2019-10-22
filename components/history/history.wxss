@@ -1,0 +1,9 @@
+.hs{
+  /* height: 100rpx; */
+  width: 100%;
+  background: transparent;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 34rpx;
+  z-index: 1;
+}

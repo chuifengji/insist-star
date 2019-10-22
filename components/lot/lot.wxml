@@ -1,0 +1,4 @@
+   <view wx:for="{{lots}}" wx:key="id"  data-index="{{id}}"  class='lot'>
+    <view>{{content}}</view>
+    <view bindtap='delete'  class='x'></view>
+    </view>

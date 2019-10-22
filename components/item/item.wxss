@@ -1,0 +1,130 @@
+page{
+  padding: 0;
+  margin: 0;
+}
+
+.box{
+  height: 100%;
+  width: 100%;
+}
+.item{
+  position:relative;
+  top: 0;
+  width: 750rpx;
+  height: 84rpx;
+  border-bottom: #d9d9d9 solid 2rpx;
+  padding: 0;
+  margin: 0;
+}
+.item .content{
+  background-color: white;
+  height: 100%;
+  position: relative;
+  left: 0;
+  width: 750rpx;
+  transition: all 0.3s;
+  border-right: none;
+  color: rgba(22, 22, 22, 0.863);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.item .del-button {
+  position: absolute;
+  right: -140rpx;
+  width: 140rpx;
+  height: 100%;
+  background-color: #31db0f;
+  color: #fff;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  font-size: 24rpx;
+   margin: 0;
+  padding: 0;
+}
+.item .punchcard {
+  position: absolute;
+  right: -280rpx;
+  width: 140rpx;
+  height: 100%;
+  background-color: #df3448;
+  color: rgb(218, 216, 216);
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  font-size: 24rpx;
+  margin: 0;
+  padding: 0;
+}
+.item.active .content{
+  left: -280rpx;
+}
+.item.active .del-button{
+  right: 140rpx;
+}
+.item.active .punchcard{
+  right: 0rpx;
+}
+.nameofstar{
+  height: 90rpx;
+  width: 41%;
+  position: absolute;
+  left: 2%;
+
+  margin: 0px;
+    line-height: 90rpx;
+   color: rgb(209, 209, 209);
+
+font-size: 30rpx;
+}
+.detailofbegin{
+  height: 90rpx;
+  width: 20%;
+   position: absolute;
+   left: 42%;
+   margin: 0px;
+   color: rgb(209, 209, 209);
+
+   font-size: 26rpx;
+   text-align: cenrter;
+   line-height: 90rpx;
+  justify-content: center;
+
+}
+.detailofover{
+   height: 90rpx;
+  width: 20%;
+   position: absolute;
+   left: 62.5%;
+   margin: 0px;
+ 
+   font-size: 26rpx;
+  line-height: 90rpx;
+  justify-content: center;
+   color: rgb(209, 209, 209);
+
+  
+   
+
+}
+.days{
+  height: 90rpx;
+  width: 15%;
+   position: absolute;
+   left: 81.5%;
+
+ 
+   font-size: 26rpx;
+  line-height: 90rpx;
+  justify-content: center;
+
+   color: rgb(209, 209, 209);
+
+}

@@ -1,0 +1,7 @@
+<view class='hs'>
+<text>事件名称：{{name}}</text>
+<text>状态：{{statu}}\n</text>
+<text>开始时间：{{btime}}\n</text>
+<text>结束时间：{{etime}}\n</text>
+
+</view>

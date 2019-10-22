@@ -1,0 +1,13 @@
+
+  <view class="item {{status ? '' :'active'}}">
+    <view class="content" bindtouchstart="touchS" bindtouchmove="touchM">
+    <view class='nameofstar'>{{name}}</view>
+<view class='detailofbegin'>{{begintimeY}}-{{begintimeM}}-{{begintimeR}}</view>
+   <view class='detailofover'>{{indexy}}-{{indexm}}-{{indexdmaster}}</view>
+   <view class='days'>已坚持:{{days}}</view>
+    </view>
+  
+    <view class="del-button" catchtap='aaa'>打卡</view>
+    <view class='punchcard' bindtap='removestar'>放弃</view>
+  
+  </view>

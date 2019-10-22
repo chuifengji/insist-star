@@ -1,0 +1,43 @@
+
+
+
+<view class='nav' style='height:{{height}}px;top:{{navtop}}px;line-height:{{height}}px'>
+<view class='content'>坚持星球</view>
+<view class='backbt'></view>
+</view>
+
+
+<view class='container'>
+<view class='star1'></view>
+<view class='star2'></view>
+<view class='star3'></view>
+<view class='star4'></view>
+<view class='star5'></view>
+<view class='star6'></view>
+<view class='star7'></view>
+<view class='star8'></view>
+<view class='star9'></view>
+<view class='kuang'>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+</view>
+
+<image class='xingqiu1' src='https://mini-1258759069.cos.ap-chengdu.myqcloud.com/xingqiu1.png'></image>
+<image class='xingqiu2' src='https://mini-1258759069.cos.ap-chengdu.myqcloud.com/xingqiu2.png'></image>
+<image class='yourmoon' bindtap='f1' src='https://mini-1258759069.cos.ap-chengdu.myqcloud.com/yourmoon.png'></image>
+<text class='day'>星球已飞行{{day}}天</text>
+<image class='moon' src='https://mini-1258759069.cos.ap-chengdu.myqcloud.com/zhuxin.png'></image>
+<image bindtap='f2' class='btn' src='https://mini-1258759069.cos.ap-chengdu.myqcloud.com/huixingcangku.png'></image>
+
+</view>
+
+<view class="wx-popup" wx:if="{{!hasUserInfo && canIUse}}" hidden="{{flag}}">
+  <view class='popup-container'>
+    <view class="wx-popup-title">提示</view>
+    <view class="wx-popup-con">请求微信公开信息(头像、昵称等)</view>
+    <view class="wx-popup-btn">
+  
+      <button class="btn_no" hover-class='hover' bindtap='_error'>拒绝</button>
+      <button class="btn_ok" hover-class='hover' open-type="getUserInfo" bindgetuserinfo="getUserInfo"  >同意</button>
+    </view>
+  </view>
+</view>
